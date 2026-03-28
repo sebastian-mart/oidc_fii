@@ -128,7 +128,7 @@ resource "aws_security_group" "cloudpulse_sg" {
     from_port   = 3000
     to_port     = 9999
     protocol    = "tcp"
-    self        = true  #expunem porturi doar in security group
+    self        = true #expunem porturi doar in security group
   }
 
   egress {
