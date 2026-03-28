@@ -11,7 +11,7 @@ IMAGE_KEY   = "${image_key}"
 
 s3_client = boto3.client('s3', region_name=REGION)
 dynamodb  = boto3.resource('dynamodb', region_name=REGION)
-table     = dynamodb.Table(TABLE_NAME)#da
+table     = dynamodb.Table(TABLE_NAME)
 
 def get_metadata(path):
     try:
